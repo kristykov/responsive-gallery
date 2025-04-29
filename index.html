@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Gallery with Video Modal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
+  <body>
+    <main class="gallery">
+      <section class="gallery__intro" aria-labelledby="gallery-heading">
+        <h2 class="gallery__heading" id="gallery-heading">Snippet Heading</h2>
+        <div id="gallery-description-container"></div>
+
+        <h3 class="gallery__subheading">Links</h3>
+        <div class="gallery__link-group">
+          <button
+            class="gallery__link-btn gallery__link-btn--primary"
+            aria-label="Link One"
+          >
+            Link One
+            <svg
+              class="gallery__icon"
+              aria-label="starIcon"
+              width="18"
+              height="16"
+              viewBox="0 0 18 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.90312 0.5625C9.7375 0.21875 9.3875 0 9.00313 0C8.61875 0 8.27187 0.21875 8.10312 0.5625L6.09375 4.69688L1.60625 5.35938C1.23125 5.41563 0.91875 5.67812 0.803125 6.0375C0.6875 6.39687 0.78125 6.79375 1.05 7.05937L4.30625 10.2812L3.5375 14.8344C3.475 15.2094 3.63125 15.5906 3.94062 15.8125C4.25 16.0344 4.65937 16.0625 4.99687 15.8844L9.00625 13.7437L13.0156 15.8844C13.3531 16.0625 13.7625 16.0375 14.0719 15.8125C14.3812 15.5875 14.5375 15.2094 14.475 14.8344L13.7031 10.2812L16.9594 7.05937C17.2281 6.79375 17.325 6.39687 17.2062 6.0375C17.0875 5.67812 16.7781 5.41563 16.4031 5.35938L11.9125 4.69688L9.90312 0.5625Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button
+            class="gallery__link-btn gallery__link-btn--secondary"
+            aria-label="Link Two"
+          >
+            Link Two
+          </button>
+        </div>
+      </section>
+
+      <section class="gallery__container">
+        <div class="gallery__grid" role="grid"></div>
+        <p class="gallery__copyright">
+          <small
+            ><strong>Media copyright</strong> – Lorem ipsum dolor sit
+            amet.</small
+          >
+        </p>
+      </section>
+
+      <section
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-hidden="true"
+        aria-labelledby="modal-heading"
+      >
+        <div class="modal__content">
+          <div class="modal__header">
+            <h2 id="modal-heading">Modal Heading</h2>
+            <button class="modal__close" aria-label="Close modal">
+              <svg
+                aria-label="closeIcon"
+                width="18"
+                height="24"
+                viewBox="0 0 24 18"
+                fill="none"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="21" y1="3" x2="3" y2="21" />
+                <line x1="3" y1="3" x2="21" y2="21" />
+              </svg>
+            </button>
+          </div>
+          <div id="modal-description-container"></div>
+          <div class="modal__video-container"></div>
+        </div>
+        <div class="modal__overlay"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
