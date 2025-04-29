@@ -1,0 +1,17 @@
+{
+  "name": "gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "sass": "sass styles:css --no-source-map",
+    "start": "npx live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "sass": "^1.87.0"
+  }
+}
