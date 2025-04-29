@@ -45,11 +45,11 @@ https://kristykov.github.io/responsive-gallery/
 
 ## Installation
 
-Clone the repository to your local machine using ``
+Clone the repository to your local machine using `git clone git@github.com:kristykov/responsive-gallery.git`
 
 Install the necessary dependencies using `npm install`
 
-To manually compile SCSS to CSS: `npm run sass`
+To manually compile SCSS to CSS `npm run sass`
 
 Run the app `npm run start`
 
