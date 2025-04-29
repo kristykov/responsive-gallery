@@ -15,6 +15,13 @@ The gallery is optimized for modern browsers and devices, ensuring responsivenes
 
 ## Deploy
 
+https://kristykov.github.io/responsive-gallery/
+
+## Deployment Preview
+
+![Deployed Gallery Screenshot 1](./assets/deployed-preview1.png)
+![Deployed Gallery Screenshot 2](./assets/deployed-preview2.png)
+
 ## Technologies Used
 
 - HTML
@@ -24,6 +31,7 @@ The gallery is optimized for modern browsers and devices, ensuring responsivenes
 ## Project Structure
 
 - `gallery/`
+  - `assets/`
   - `css/`
     - `gallery.css`
   - `styles/`
