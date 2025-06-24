@@ -26,7 +26,7 @@ h3 {
 
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #222222;
   padding: 1.875rem;
 }
@@ -46,10 +46,10 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 50rem;
 }
 .gallery__description {
-  max-width: 800px;
+  max-width: 50rem;
   padding: 1.25rem 0;
 }
 .gallery__link-group {
@@ -99,7 +99,7 @@ p {
 .gallery__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-template-rows: 500px 250px;
+  grid-template-rows: 250px 220px 250px;
   gap: 1.875rem;
 }
 .gallery__grid--column-3 {
@@ -108,7 +108,7 @@ p {
   display: grid;
   grid-template-rows: 250px 500px;
   grid-template-columns: 1fr;
-  row-gap: 30px;
+  row-gap: 1.875rem;
 }
 .gallery__item {
   position: relative;
@@ -137,23 +137,23 @@ p {
 }
 .gallery__item--large-left {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 1/span 2;
 }
 .gallery__item--large-middle {
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 1/span 2;
 }
 .gallery__item--bottom-wide {
   grid-column: 1/span 2;
-  grid-row: 2;
+  grid-row: 3;
 }
 .gallery__item--column3-top {
-  grid-column: 1;
+  grid-column: 3;
   grid-row: 1;
 }
 .gallery__item--column3-bottom {
-  grid-column: 1;
-  grid-row: 2;
+  grid-column: 3;
+  grid-row: 2/span 2;
 }
 .gallery__image {
   position: absolute;
@@ -244,7 +244,7 @@ p {
   width: 100%;
 }
 .modal__description {
-  max-width: 800px;
+  max-width: 50rem;
   padding: 1.25rem 0;
 }
 .modal__video-container {
@@ -267,8 +267,8 @@ p {
   height: 100%;
 }
 .modal__close {
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   background-color: #9f0000;
   border-radius: 50%;
   border: none;

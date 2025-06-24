@@ -129,11 +129,11 @@ class Gallery {
         galleryItem.appendChild(wrapper);
       }
 
-      if (modifier.startsWith("column3-")) {
-        column3.appendChild(galleryItem);
-      } else {
-        this.gallery.appendChild(galleryItem);
-      }
+      // if (modifier.startsWith("column3-")) {
+      //   column3.appendChild(galleryItem);
+      // } else {
+      this.gallery.appendChild(galleryItem);
+      // }
     });
     this.gallery.appendChild(column3);
   }
